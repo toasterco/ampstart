@@ -59,8 +59,10 @@
 .landing__section {
   height: var(--landing-page-height);
   min-height: var(--landing-page-min-height);
+}
 
-  padding-top: var(--layout-header-height-m);
+.landing__wrapper {
+  top: var(--layout-header-height-m);
 }
 
 .lune-clippath-wrapper {
@@ -149,8 +151,8 @@
 }
 
 @media (--breakpoint-mt) {
-  .landing__section {
-    padding-top: var(--layout-header-height-d);
+  .landing__wrapper {
+    top: var(--layout-header-height-d);
   }
 
   .landing__content {
