@@ -19,7 +19,7 @@
 
   overflow: scroll;
 
-  padding-top: var(--layout-header-height-m);
+  padding-top: var(--layout-header-height-mobile);
 
   opacity: 1;
 

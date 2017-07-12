@@ -1,14 +1,17 @@
+@import "../../../ampstart-base/bass-override-vars";
 @import "../page-vars";
 
-.lune .ampstart-headerbar {
-  height: var(--layout-header-height-m);
+.ampstart-headerbar {
+  height: var(--layout-header-height-mobile);
 
+  /* Override ampstart default box shadow styles */
   box-shadow: none;
 
+  /* header is fixed so should be moved onto a new GPU layer */
   will-change: transform;
 }
 
-.lune .ampstart-headerbar-title {
+.ampstart-headerbar-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,26 +28,25 @@
   transform: translate(-50%, -50%);
 }
 
-.lune .ampstart-navbar-trigger {
-  padding-left: 5px;
+.ampstart-navbar-trigger {
+  padding-left: var(--space-1);
 
-  font-size: 40px;
+  font-size: 2.5rem; /* 40px */
 }
 
 @media (--breakpoint-mt) {
-
-  .lune .ampstart-navbar-trigger {
-    padding-left: 20px;
+  .ampstart-navbar-trigger {
+    padding-left: var(--space-3);
   }
 
-  .lune .ampstart-headerbar {
-    height: var(--layout-header-height-d);
+  .ampstart-headerbar {
+    height: var(--layout-header-height-desktop);
   }
 }
 
 /* Remove the default margin top from amp-sidebar and navbar */
-.lune .ampstart-headerbar+:not(amp-sidebar),
-.lune .ampstart-headerbar+amp-sidebar+* {
+.ampstart-headerbar+:not(amp-sidebar),
+.ampstart-headerbar+amp-sidebar+* {
   margin-top: 0;
 }
 

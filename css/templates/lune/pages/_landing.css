@@ -62,7 +62,7 @@
 }
 
 .landing__wrapper {
-  top: var(--layout-header-height-m);
+  top: var(--layout-header-height-mobile);
 }
 
 .lune-clippath-wrapper {
@@ -152,7 +152,7 @@
 
 @media (--breakpoint-mt) {
   .landing__wrapper {
-    top: var(--layout-header-height-d);
+    top: var(--layout-header-height-desktop);
   }
 
   .landing__content {
