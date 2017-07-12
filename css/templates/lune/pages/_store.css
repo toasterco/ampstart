@@ -9,8 +9,8 @@
  * Layout
  ******************************************************************************/
 .lune-page--store .lune-page__wrapper {
-  min-height: calc(100vh - var(--layout-header-height-m));
-  padding-bottom: var(--layout-header-height-m);
+  min-height: calc(100vh - var(--layout-header-height-mobile));
+  padding-bottom: var(--layout-header-height-mobile);
 }
 
 .store__title,
@@ -30,8 +30,8 @@
 
 @media (--breakpoint-mt) {
   .lune-page--store .lune-page__wrapper {
-    min-height: calc(100vh - var(--layout-header-height-d));
-    padding-bottom: var(--layout-header-height-d);
+    min-height: calc(100vh - var(--layout-header-height-desktop));
+    padding-bottom: var(--layout-header-height-desktop);
   }
 
   .store__title {

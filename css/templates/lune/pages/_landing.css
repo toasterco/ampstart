@@ -62,7 +62,7 @@
   height: var(--landing-page-height);
   min-height: var(--landing-page-min-height);
 
-  padding-top: var(--layout-header-height-m);
+  padding-top: var(--layout-header-height-mobile);
 }
 
 .landing__section.lune-theme--dark {
@@ -136,7 +136,7 @@
 
 @media (--breakpoint-mt) {
   .landing__section {
-    padding-top: var(--layout-header-height-d);
+    padding-top: var(--layout-header-height-desktop);
   }
 
   .landing__content {
