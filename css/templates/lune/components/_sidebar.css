@@ -1,3 +1,4 @@
+@import "../../../ampstart-base/bass-override-vars";
 @import "../page-vars";
 
 amp-sidebar {
@@ -5,7 +6,7 @@ amp-sidebar {
 }
 
 amp-sidebar .ampstart-navbar-trigger  {
-  padding-top: 10px;
+  padding-top: var(--space-1);
 }
 
 @media (--breakpoint-lg) {
