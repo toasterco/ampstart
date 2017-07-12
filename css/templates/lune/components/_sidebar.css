@@ -1,21 +1,21 @@
 @import "../../../ampstart-base/bass-override-vars";
 @import "../page-vars";
 
-amp-sidebar {
+.ampstart-sidebar {
   width: 80vw;
 }
 
-amp-sidebar .ampstart-navbar-trigger  {
+.ampstart-sidebar .ampstart-navbar-trigger  {
   padding-top: var(--space-1);
 }
 
 @media (--breakpoint-lg) {
-  amp-sidebar {
+  .ampstart-sidebar {
     width: 50vw;
   }
 }
 
-/* hide the amp-sidebar without failing validation */
+/* hide the .amp-sidebar without failing validation */
 div[class*='sidebar-mask'] {
   opacity: 0;
 }
@@ -34,7 +34,7 @@ div[class*='sidebar-mask'] {
   transform: translate(-50%, -50%);
 }
 
-.ampstart-nav-item {
+.ampstart-sidebar .ampstart-nav-item {
   display: block;
 
   width: 80%;
