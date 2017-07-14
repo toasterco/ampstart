@@ -70,7 +70,8 @@
   width: 0;
 }
 
-@supports (clip-path: url(#svgPath)) {
+/* Only implement this visual improvement if clip-path exists */
+@supports(clip-path: inset(1px 0)) {
   .landing__section.lune-theme--light {
     clip-path: url(#svgPath);
     height: 102vh;
