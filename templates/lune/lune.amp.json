@@ -22,7 +22,7 @@
         "classes": "lune-anim-move-up z2"
       },
       "scroll-indicator": {
-        "classes": "relative"
+        "classes": "relative md-mt2"
       }
     },
     {
@@ -36,7 +36,7 @@
         "classes": "lune-anim-move-up z2"
       },
       "scroll-indicator": {
-        "classes": "relative"
+        "classes": "relative md-mt2"
       }
     }
   ]
