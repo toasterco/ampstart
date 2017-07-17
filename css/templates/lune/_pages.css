@@ -4,13 +4,6 @@
   padding-top: var(--layout-header-height-narrow);
 }
 
-
-.lune-page .lune-page__wrapper {
-  margin: 0 auto;
-  max-width: 80rem;
-}
-
-
 .page-min-height {
   min-height: calc(100vh - var(--layout-header-height-narrow));
 }

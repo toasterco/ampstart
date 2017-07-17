@@ -49,11 +49,6 @@
   top: var(--layout-header-height-narrow);
 }
 
-.lune-clippath-wrapper {
-  height: 0;
-  width: 0;
-}
-
 /* Only implement this visual improvement if clip-path exists */
 @supports (clip-path: inset(1px 0)) {
   .landing__section.lune-theme--light {
