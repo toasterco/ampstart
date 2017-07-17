@@ -1,16 +1,12 @@
 @import "../page-vars";
 
 :root {
-  --lune-landing-title-offset-common: -0.26em; /* matches the letter-spacing */
   --lune-landing-title-offset-horizontal-narrow: -6%;
   --lune-landing-title-offset-horizontal-tablet: -32%;
   --lune-landing-title-offset-horizontal-wide: -38%;
 
   --lune-landing-page-height: 100vh;
   --lune-landing-page-min-height: 37.5rem; /* 600px */
-
-  /* 600px, same as the landing page mixed min height */
-  @custom-media --lune-breakpoint-landing-min-height (min-height: 37.5rem);
 }
 
 
@@ -56,8 +52,9 @@
 /*
  * When there is enough estate in the viewport, set a fixed height for the page
  * and fixed position on the lower section, in order to achieve a "reveal" effect.
+ * Threshold is 600px, same as --lune-landing-page-height.
  */
-@media (--lune-breakpoint-landing-min-height) {
+@media (min-height: 37.5rem) {
   .lune-page-landing {
     height: calc(2 * var(--lune-landing-page-height));
   }
@@ -89,8 +86,8 @@
 }
 
 .lune-landing-title-top {
-  left: calc(var(--lune-landing-title-offset-common) +
-      var(--lune-landing-title-offset-horizontal-narrow));
+  left: calc(var(--lune-landing-title-offset-horizontal-narrow) -
+      var(--letter-spacing-3));
   top: 4%;
   letter-spacing: var(--letter-spacing-3);
   text-indent: var(--letter-spacing-3);
@@ -98,8 +95,8 @@
 }
 
 .lune-landing-title-bottom {
-  right: calc(var(--lune-landing-title-offset-common) +
-      var(--lune-landing-title-offset-horizontal-narrow));
+  right: calc(var(--lune-landing-title-offset-horizontal-narrow) -
+      var(--letter-spacing-3));
   top: 64%;
   letter-spacing: var(--letter-spacing-3);
   text-indent: var(--letter-spacing-3);
@@ -117,30 +114,26 @@
     top: var(--layout-header-height-wide);
   }
 
-  .lune-landing-content {
-    margin-bottom: 4rem;
-  }
-
   .lune-landing-title-top {
-    left: calc(var(--lune-landing-title-offset-common) +
-        var(--lune-landing-title-offset-horizontal-tablet));
+    left: calc(var(--lune-landing-title-offset-horizontal-tablet) -
+        var(--letter-spacing-3));
     z-index: initial;
   }
 
   .lune-landing-title-bottom {
-    right: calc(var(--lune-landing-title-offset-common) +
-        var(--lune-landing-title-offset-horizontal-tablet));
+    right: calc(var(--lune-landing-title-offset-horizontal-tablet) -
+        var(--letter-spacing-3));
   }
 }
 
 @media (--breakpoint-md) {
   .lune-landing-title-top {
-    left: calc(var(--lune-landing-title-offset-common) +
-        var(--lune-landing-title-offset-horizontal-wide));
+    left: calc(var(--lune-landing-title-offset-horizontal-wide) -
+        var(--letter-spacing-3));
   }
 
   .lune-landing-title-bottom {
-    right: calc(var(--lune-landing-title-offset-common) +
-        var(--lune-landing-title-offset-horizontal-wide));
+    right: var(--lune-landing-title-offset-horizontal-wide) -
+        calc(var(--letter-spacing-3));
   }
 }
