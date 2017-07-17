@@ -4,17 +4,9 @@
   padding-top: var(--layout-header-height-narrow);
 }
 
-.page-min-height {
-  min-height: calc(100vh - var(--layout-header-height-narrow));
-}
-
 @media (--breakpoint-mt) {
   .lune-page {
     padding-top: var(--layout-header-height-wide);
-  }
-
-  .page-min-height {
-    min-height: calc(100vh - var(--layout-header-height-wide));
   }
 }
 
