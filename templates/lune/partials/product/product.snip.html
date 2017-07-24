@@ -46,48 +46,39 @@
         </section>
       {{/hero}}
       {{#main}}
-        <section class="">
+        <section>
             {{#sections}}
-
-              <div class="overlay__wrapper col-10 mx-auto relative {{classes}}">
-
-              {{#section_title}}
-                <h3 class="relative h4 black mt4 caps ls-46 fs-312-md overlay__headline-2 lh-175 overlay__copy">
-                  {{#parts}}<span class="inline-block">{{.}}</span>{{/parts}}
-                  {{^parts}}
-                    {{full}}
-                  {{/parts}}
-                </h3>
-              {{/section_title}}
-
-              {{#flying-carpet}}
-                <div class="overlay__carpet-wrapper {{position}}-0">
-                  <amp-fx-flying-carpet height="{{height}}">
+              <div class="overlay__wrapper col-10 mx-auto relative flex {{classes}}">
+                  <div class="col-2 display-none flex-none"></div>
+                  <div class="overlay__image flex-none relative">
                     {{#image}}
-                      <!-- TODO - Add srcset -->
-                      <amp-img src="{{src}}"
-                        width="{{width}}"
-                        height="{{height}}"
-                        alt="an image"></amp-img>
+                      <amp-img
+                        amp-fx-parallax="1.1"
+                        class="absolute top-0 left-0 right-0 bottom-0"
+                        src="{{src}}"
+                        layout="fill"
+                        alt=""></amp-img>
                     {{/image}}
-                  </amp-fx-flying-carpet>
-                </div>
-              {{/flying-carpet}}
+                  </div>
+                  <div class="col-1 display-none flex-none"></div>
+                  <div class="overlay__copy relative">
+                    {{#section_title}}
+                      <h3 class="relative h4 black mt4 caps ls-46 fs-312-md overlay__headline-2 lh-175">
+                        {{#parts}}<span class="inline-block">{{.}}</span>{{/parts}}
+                        {{^parts}}{{full}}{{/parts}}
+                      </h3>
+                    {{/section_title}}
+                    {{#subtitle}}
+                      <h4 class="h6 fs-137 caps black mt4 mb3">{{.}}</h4>
+                    {{/subtitle}}
 
-              <div class="overlay__copy">
-                {{#subtitle}}
-                  <h4 class="h6 fs-137 caps black mt4 mb3">{{.}}</h4>
-                {{/subtitle}}
-
-                {{#body}}
-                  <p class="mb2">{{.}}</p>
-                {{/body}}
+                    {{#body}}
+                      <p class="mb2">{{.}}</p>
+                    {{/body}}
+                  </div>
+                  <div class="col-1 display-none flex-none"></div>
               </div>
-
-            </div>
-
             {{/sections}}
-
         </section>
       {{/main}}
 

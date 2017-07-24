@@ -5,7 +5,6 @@
       "canonical-path": "templates/product-blanc.amp",
       "extensions": [
         "amp-sidebar",
-        "amp-fx-flying-carpet",
         "amp-accordion",
         "amp-fx-parallax"
       ],
@@ -142,7 +141,7 @@
         },
         "main": {
           "sections": [{
-            "classes": "",
+            "classes": "overlay__wrapper--left",
             "section_title": {
               "full": "Headline two",
               "parts": [
@@ -156,28 +155,16 @@
               "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
               "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
             ],
-            "flying-carpet": {
-              "position": "right",
-              "height": "462px",
-              "image": {
-                "src": "../../img/lune/overlay-img-1-1@2x.jpg",
-                "width": 600,
-                "height": 675
-              }
+            "image": {
+              "src": "../../img/lune/overlay-img-1-1@2x.jpg"
             }
           }, {
-            "classes": "overlay__wrapper--right",
+            "classes": "",
             "body": [
               "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
             ],
-            "flying-carpet": {
-              "position": "left",
-              "height": "462px",
-              "image": {
-                "src": "../../img/lune/overlay-img-1-2@2x.jpg",
-                "width": 600,
-                "height": 675
-              }
+            "image": {
+              "src": "../../img/lune/overlay-img-1-2@2x.jpg"
             }
           }]
         }
@@ -204,7 +191,7 @@
         },
         "main": {
           "sections": [{
-            "classes": "",
+            "classes": "overlay__wrapper--left",
             "section_title": {
               "full": "Headline two",
               "parts": [
@@ -218,28 +205,16 @@
               "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
               "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
             ],
-            "flying-carpet": {
-              "position": "right",
-              "height": "462px",
-              "image": {
-                "src": "../../img/lune/overlay-img-2-1@2x.jpg",
-                "width": 600,
-                "height": 675
-              }
+            "image": {
+              "src": "../../img/lune/overlay-img-2-1@2x.jpg"
             }
           }, {
-            "classes": "overlay__wrapper--right",
+            "classes": "",
             "body": [
               "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
             ],
-            "flying-carpet": {
-              "position": "left",
-              "height": "462px",
-              "image": {
-                "src": "../../img/lune/overlay-img-2-2@2x.jpg",
-                "width": 600,
-                "height": 675
-              }
+            "image": {
+              "src": "../../img/lune/overlay-img-2-2@2x.jpg"
             }
           }]
         }
